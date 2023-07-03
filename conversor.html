@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor | MyFunds</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/estilosconversor.css">
+    <link rel="stylesheet" href="css/font.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container container--flex">
+            <div class="logo-container column column--50">
+                <h1 class="logo">Banco MyFunds</h1>
+            </div>
+            <div class="main-header__contactInfo column column--50">
+                <p class="main-header__contactInfo__phone">
+                    <span class="icon-phone">5785284</span>
+                </p>
+                <p class="main-header__contactInfo__address">
+                <span class="icon-ubicacion">Calle siempre viva</span>
+                </p>
+            </div>
+        </div>
+    </header>
+    <nav class="main-nav">
+        <div class="container container--flex">
+            <span class="icon-menu" id="btnmenu"></span>
+            <ul class="menu" id="menu">
+                <li class="menu__item"><a href="index.html" class="menu__link ">Inicio</a></li>
+                <li class="menu__item"><a href="personas.html" class="menu__link ">Personas</a></li>
+                <li class="menu__item"><a href="empresas.html" class="menu__link">Empresas</a></li>
+                <li class="menu__item"><a href="conversor.html" class="menu__link enu__link--select">Conversor</a></li>
+                <li class="menu__item"><a href="contacto.html" class="menu__link">Contáctanos</a></li>
+            </ul>
+            <div class="social-icon">
+                <a href="" class="social-icon__link"><span class="icon-facebook"></span></a>
+                <a href="" class="social-icon__link"><span class="icon-twitter"></span></a>
+                <a href="" class="social-icon__link"><span class="icon-whatsapp"></span></a>
+            </div>
+        </div>
+    </nav>
+    <section class="banner">
+        <img src="img/banner%20conversor.jpg" alt="" class="banner__img">
+        <div class="banner__content">Realice la conversión a la moneda que más le convenga</div>
+    </section>
+    <main>
+          <h3>Convertidor a moneda extranjera</h3>
+    
+            <div class="contenidos">
+              
+               
+                <label>Seleccione la moneda de cambio:</label> 
+                <div class="seleccionM">    
+                    <select id="MonedaCa">
+                        <option value="a">Seleccione moneda</option>
+                        <option value="d">Dòlares</option>
+                        <option value="e">Euros</option>
+                        <option value="y">Yenes</option>
+                    </select>
+                </div>
+                
+                <label>Ingrese el valor a convertir:</label>
+                <input id="valor" type="" placeholder="Cantidad a convertir">
+
+                <button id="btnConver" onclick="convertirmoneda('seleccionMoneda')" >
+                    Convertir
+                </button>
+                
+            </div>
+            <div class="mostrarResultado" id="resultadodelCambio">
+                
+            </div>
+    </main>
+    <footer class="main-footer">
+            <div class="container container--flex">
+                <div class="column column--33">
+                   <h2 class="column__title">¿Por qué visitarnos?</h2>
+                   <p class="column__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus dolores nobis harum accusantium, magni autem, vel, vero, blanditiis recusandae ipsam commodi est explicabo impedit pariatur assumenda dignissimos. Necessitatibus odio, laboriosam?</p> 
+                </div>
+                <div class="column column--33">
+                   <h2 class="column__title">Contáctanos</h2>
+                   <p class="column__txt"><a href="" class="icon-ubicacion"></a>Avenida Siempre viva</p> 
+                   <p class="column__txt"><a href="" class="icon-phone"></a>Teléfonos: 5788475 - 3215487965</p>
+                   <p class="column__txt"><a href="" class="icon-whatsapp">Whatsapp: 3215487965</a></p>  
+                   <p class="column__txt"><a href="" class="icon-mail"></a>consultas@bancomyfunds.com.co</p> 
+                </div>
+                <div class="column column--33">
+                   <h2 class="column__title">Síguenos en nuestras redes sociales</h2>
+                   <p class="column__txt"><a href="" class="icon-facebook">Facebook</a></p> 
+                   <p class="column__txt"><a href="" class="icon-twitter">Síguenos en twitter</a></p> 
+                </div>
+                <p class="copy">© 2020 Banco MyFunds │ Todos los derechos reservados</p>
+            </div>
+        </footer>
+    <script src="js/menu.js"></script>
+</body>
+</html>
